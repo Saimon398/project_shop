@@ -1,0 +1,112 @@
+@import "variables";
+
+.b-productInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1600px) {
+    margin: 90px 230px 0;
+    width: 1140px;
+    height: 601px;
+  }
+
+  &__heading {
+    font-size: 14px;
+    font-weight: 300;
+    color: $pinkColor;
+    text-transform: uppercase;
+    padding: 64px 114px 12px;
+  }
+  &__divider {
+    &_red {
+      width: 63px;
+      height: 3px;
+      margin: 0 155px;
+      border: none;
+      outline: none;
+      background: $pinkColor;
+    }
+
+    &_grey {
+      width: 175px;
+      height: 1px;
+      margin: 0 100px;
+      background: #eaeaea;
+      border: none;
+      outline: none;
+    }
+  }
+  &__subHeading {
+    padding: 12px 60px 32px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d4d4d;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    max-width: 555px;
+    padding: 0 25px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143.1%;
+    text-align: center;
+    color: #5e5e5e;
+  }
+  &__price {
+    padding: 37px 160px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 130%;
+    color: #ef5b70;
+  }
+  &__itemList {
+    display: flex;
+    justify-content: space-between;
+    gap: 27px;
+    margin: 39px 0 65px;
+    @media (min-width: 768px) {
+      margin-top: 92px;
+    }
+  }
+  &__item {
+    list-style-type: none;
+    font-size: 10px;
+    line-height: 17px;
+    color: #6f6e6e;
+    text-transform: uppercase;
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  &__itemArrow {
+    margin-left: 9px;
+  }
+  &__button {
+    width: 211px;
+    height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid $pinkColor;
+    outline: none;
+    // padding: 8px 0;
+    // box-sizing: border-box;
+    font-size: 16px;
+    line-height: 19px;
+    color: $pinkColor;
+    background: #fff;
+    transition-duration: 0.5s;
+    &:hover {
+      transform: scale(1.5);
+      box-shadow: 1px 1px 10px grey;
+    }
+  }
+}

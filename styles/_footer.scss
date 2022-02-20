@@ -1,0 +1,161 @@
+@import "variables";
+
+.b-footer {
+  &__top {
+    background-image: url(../images/product/subscribe__back.jpg);
+    background-size: cover;
+    background-position: -380px 0;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 54.05px 17px 0;
+    // @media (min-width: 768px) {
+    //   max-width: 768px;
+    // }
+    @media (min-width: 1600px) {
+      flex-direction: row;
+      justify-content: space-around;
+      padding-top: 117px;
+      background-repeat: no-repeat;
+      background-position-x: center;
+    }
+    @media (min-width: 1600px) {
+      height: 448px;
+      padding-top: 0;
+      justify-content: space-evenly;
+    }
+  }
+  &__comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 360px;
+  }
+  &__comText {
+    padding: 35px 0 28px;
+    font-size: 18px;
+    color: $darkestColor;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  &__subscriptionForm {
+    text-align: center;
+    padding-top: 38px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      padding-top: 50px;
+      width: 345px;
+    }
+    @media (min-width: 1600px) {
+      width: 360px;
+      padding: 0;
+      height: 105px;
+    }
+  }
+  &__text {
+    text-transform: uppercase;
+    position: relative;
+  }
+  &__formTop {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &__formBottom {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  &__userEmail {
+    padding: 22.15px 0 110px;
+    display: flex;
+    @media (min-width: 768px) {
+      padding-top: 25px;
+    }
+    @media (min-width: 1600px) {
+      padding: 0;
+      margin-top: 28px;
+    }
+  }
+  &__userInput {
+    background: $bodyColor;
+    color: $darkestColor;
+    // opacity: 0.67;
+    height: 47px;
+    border: none;
+    outline: none;
+    padding: 7px 21px;
+    box-sizing: border-box;
+    border-radius: 25px 0 0 25px;
+    width: 72%;
+    transition-duration: 0.5s;
+    &:focus {
+      background: #f1e4e6;
+      border: 2px solid $pinkColor;
+    }
+  }
+  &__button {
+    width: 28%;
+    background: $pinkColor;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 7px 21px;
+    border-radius: 0 25px 25px 0;
+  }
+  &__bottom {
+    background: $darkestColor;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 32px;
+      box-sizing: border-box;
+      height: 79px;
+    }
+    @media (min-width: 1600px) {
+      justify-content: space-around;
+    }
+  }
+  &__nav {
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 43px;
+    @media (min-width: 768px) {
+      order: 1;
+      padding: 0;
+    }
+  }
+  &__socials {
+    padding: 8px 8px;
+  }
+  &__socials:first-child {
+    padding: 8px 10px;
+  }
+  &__socials:not(:nth-child(2)) {
+    background: #fff;
+    color: black;
+  }
+  &__socials:nth-child(2) {
+    background: $pinkColor;
+    color: white;
+  }
+  &__copyright {
+    text-align: center;
+    margin-top: 42px;
+    font-size: 16px;
+    color: $footerLightColor;
+    word-spacing: 5px;
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+  }
+}

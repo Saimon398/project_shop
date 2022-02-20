@@ -1,0 +1,260 @@
+@import "variables";
+
+.b-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 39px 8px 96px;
+  @media (min-width: 768px) {
+    align-items: center;
+    padding: 59px 16px 96px;
+  }
+  @media (min-width: 1600px) {
+    flex-direction: row;
+    padding-top: 96px;
+    width: 1140px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1600px) {
+    justify-content: space-between;
+  }
+}
+.b-topInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.b-bottomInfo {
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 768px;
+    align-items: center;
+  }
+  @media (min-width: 1600px) {
+    width: 360px;
+    flex-direction: column;
+  }
+  @media (min-width: 1600px) {
+    align-self: flex-start;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 49px 0;
+    gap: 21px;
+    @media (min-width: 768px) {
+      width: 50%;
+      padding: 64px 0;
+    }
+    @media (min-width: 1600px) {
+      width: 100%;
+    }
+    @media (min-width: 1600px) {
+      padding-top: 18px;
+    }
+  }
+
+  &__heading {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $darkestColor;
+    text-transform: uppercase;
+  }
+
+  &__userInput {
+    padding: 13px 17px 16px;
+    font-size: 13px;
+    color: $darkestColor;
+    border: 1px solid#A4A4A4;
+    outline: none;
+  }
+  &__btn {
+    padding: 10px 16px;
+    width: 100px;
+    font-size: 11px;
+    background: #fff;
+    border: 1px solid #a4a4a4;
+    outline: none;
+    &:hover {
+      background: transparentize($pinkColor, 0.5);
+      color: #fff;
+      box-shadow: 1px 1px 15px#ccc;
+    }
+  }
+}
+.b-contentCard {
+  height: 188px;
+  display: flex;
+  box-shadow: 5px 5px 15px #c9c9c9;
+  @media (min-width: 768px) {
+    height: 306px;
+    width: 734px;
+  }
+  @media (min-width: 1600px) {
+    width: 652px;
+  }
+
+  &__image {
+    width: 40%;
+    @media (min-width: 768px) {
+      width: 36%;
+    }
+    @media (min-width: 1600px) {
+      width: 40%;
+    }
+  }
+  &__desc {
+    width: 60%;
+    padding: 13.5px 12px 38px 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      padding: 31px 24px 51px 30px;
+    }
+  }
+
+  &__descTop {
+    font-size: 11px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    width: 70%;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      width: 50%;
+    }
+    @media (min-width: 1600px) {
+      width: 60%;
+    }
+  }
+
+  &__cross {
+    font-size: 13px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  &__descBottom {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    @media (min-width: 768px) {
+      font-size: 22px;
+      gap: 8px;
+    }
+  }
+  &__text_red {
+    color: $pinkColor;
+  }
+  &__text_withBorder {
+    font-size: 10px;
+    padding: 1px 8px;
+    border: 1px solid #eaeaea;
+    margin-left: 28px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      padding: 1px 14px;
+      margin-left: 28px;
+    }
+  }
+
+  &__btnWrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      justify-content: center;
+      gap: 44px;
+      margin-top: 37px;
+    }
+    @media (min-width: 1600px) {
+      justify-content: space-between;
+      margin-top: 48px;
+    }
+  }
+
+  &__btn {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 6px 28px;
+    border: 1px solid #a4a4a4;
+    background: #ffffff;
+    @media (min-width: 768px) {
+      padding: 17px 40px;
+      text-transform: uppercase;
+    }
+    &:hover {
+      background: transparentize($pinkColor, 0.5);
+      color: #fff;
+      box-shadow: 1px 1px 15px#ccc;
+    }
+  }
+}
+
+.b-finalOrder {
+  padding: 31px 43px;
+  background: $cardBackColor;
+
+  &__textWrapper {
+    text-align: right;
+    color: $darkestColor;
+  }
+  &__text {
+    &:first-child {
+      font-size: 11px;
+      margin-bottom: 12px;
+    }
+    &:last-child {
+      font-size: 16px;
+      margin-bottom: 21px;
+    }
+    &_different {
+      margin-left: 13px;
+      &_red {
+        color: $pinkColor;
+      }
+    }
+  }
+
+  &__divider {
+    background: #e2e2e2;
+    border: none;
+    height: 1px;
+    margin-bottom: 17px;
+  }
+
+  &__text:first-child {
+    font-size: 11px;
+  }
+  &__text:last-child {
+    font-size: 16px;
+  }
+
+  &__btn {
+    padding: 16px 42px;
+    background: $pinkColor;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    &:hover {
+      background: transparentize($pinkColor, 0.5);
+      color: #fff;
+      box-shadow: 1px 1px 15px#ccc;
+    }
+  }
+}

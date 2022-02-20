@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="b-topNav">
+        <div class="container">
+            <div class="b-topNav__leftItem">
+                <a href="index.html"><img src="images/topNav__leftLogo.svg" alt="logo"></a>
+                <a href="catalog.html"><img class="b-topNav__zoom" src="images/topNav__leftZoom.svg" alt="zoom"></a>
+            </div>
+            <div class="b-topNav__rightItem">
+                <a href="product.html"><img class="b-topNav__menu" src="images/topNav__rightMenu.svg" alt="menu"></a>
+                <a href="registration.html"><img class="b-topNav__user" src="images/topNav__rightUser.svg" alt="userIcon"></a>
+                <div class="b-topNav__cartIcon">
+                    <a href="cart.html"><img class="b-topNav__cartImage" src="images/topNav__cartIcon.png" alt="cart"></a>
+                    <span class="b-topNav__cartNumber">5</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="b-header">
+        <div class="b-catalogHeader">
+            <h1 class="b-catalogHeader__heading">New arrivals</h1>
+            <nav class="b-catalogHeader__headerNav">
+                <ul class="b-catalogHeader__itemsWrapper">
+                    <li class="b-catalogHeader__navItem">Home</li>
+                    <li class="b-catalogHeader__navItem">/</li>
+                    <li class="b-catalogHeader__navItem">Men</li>
+                    <li class="b-catalogHeader__navItem">/</li>
+                    <li class="b-catalogHeader__navItem">New arrivals</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-topWrapper">
+            <div class="b-productImage">
+                <img class="b-productImage__image" src="images/product/main_image.jpg" alt="image">
+                <div class="b-productImage__item">
+                    <i class="b-productImage__arrow fa-solid fa-angle-left"></i>
+                    <i class="b-productImage__arrow fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+        <section class="b-productInfo">
+            <div class="b-productInfo__desc">
+                <h2 class="b-productInfo__heading">WOMEN COLLECTION</h2>
+                <hr class="b-productInfo__divider b-productInfo__divider_red">
+                <h3 class="b-productInfo__subHeading">MOSCHINO CHEAP AND CHIC</h3>
+                <p class="b-productInfo__text">Compellingly actualize fully researched processes before proactive
+                    outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
+                    Completely visualize parallel core competencies rather than exceptional portals. </p>
+                <p class="b-productInfo__price">$561</p>
+                <hr class="b-productInfo__divider b-productInfo__divider_grey">
+            </div>
+            <nav class="b-productInfo__nav">
+                <ul class="b-productInfo__itemList">
+                    <li class="b-productInfo__item">Choose color <img class="b-productInfo__itemArrow"
+                            src="images/catalog_item_arrow.svg" alt="arrow"></li>
+                    <li class="b-productInfo__item">Choose size <img class="b-productInfo__itemArrow"
+                            src="images/catalog_item_arrow.svg" alt="arrow"></li>
+                    <li class="b-productInfo__item">Quantity <img class="b-productInfo__itemArrow"
+                            src="images/catalog_item_arrow.svg" alt="arrow"></li>
+                </ul>
+            </nav>
+            <button class="b-productInfo__button"><img class="b-productInfo__buttonImage"
+                    src="images/product/cart_icon.svg" alt="cart">Add to Cart</button>
+        </section>
+        <div class="b-productCatalog">
+            <section class="b-productCatalog__card">
+                <img class="b-productCatalog__image" src="images/card_ManWithBeard.jpg" alt="image">
+                <div class="b-productCatalog__text">
+                    <h3 class="b-productCatalog__title">ELLERY X M'O CAPSULE</h3>
+                    <p class="b-productCatalog__description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="b-productCatalog__price">$52.00</p>
+                </div>
+            </section>
+            <section class="b-productCatalog__card">
+                <img class="b-productCatalog__image" src="images/card_blackGirl.jpg" alt="image">
+                <div class="b-productCatalog__text">
+                    <h3 class="b-productCatalog__title">ELLERY X M'O CAPSULE</h3>
+                    <p class="b-productCatalog__description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="b-productCatalog__price">$52.00</p>
+                </div>
+            </section>
+            <section class="b-productCatalog__card">
+                <img class="b-productCatalog__image" src="images/card_womanWithHat.jpg" alt="image">
+                <div class="b-productCatalog__text">
+                    <h3 class="b-productCatalog__title">ELLERY X M'O CAPSULE</h3>
+                    <p class="b-productCatalog__description">Known for her sculptural takes on traditional tailoring,
+                        Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="b-productCatalog__price">$52.00</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="b-footer">
+        <div class="b-footer__top">
+            <div class="b-footer__comment">
+                <img class="b-footer__comImage" src="images/sub_image.png" alt="woman">
+                <p class="b-footer__comText">&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi,
+                    a&nbsp;pulvinar purus condimentum&raquo;</p>
+            </div>
+            <form class="b-footer__subscriptionForm" action="#">
+                <div class="b-footer__text">
+                    <div class="b-footer__formTop">Subscribe</div>
+                    <div class="b-footer__formBottom">for our newletter and promotion</div>
+                </div>
+                <div class="b-footer__userEmail">
+                    <input class="b-footer__userInput" type="email" placeholder="Enter Your Email">
+                    <button class="b-footer__button" type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div>
+        <div class="b-footer__bottom">
+            <nav class="b-footer__nav">
+                <i class="b-footer__socials fa-brands fa-facebook-f"></i>
+                <i class="b-footer__socials fa-brands fa-instagram"></i>
+                <i class="b-footer__socials fa-brands fa-pinterest-p"></i>
+                <i class="b-footer__socials fa-brands fa-twitter"></i>
+            </nav>
+            <div class="b-footer__copyright">
+                &copy; 2021 Brand All Rights Reserved
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

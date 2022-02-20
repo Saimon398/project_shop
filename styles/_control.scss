@@ -1,0 +1,34 @@
+@import "variables";
+
+.b-control {
+  width: 284px;
+  height: 43px;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__item {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: normal;
+    color: darken(#e5e5e5, 20%);
+
+    &:first-child {
+      color: #000;
+    }
+    &:last-child {
+      color: #000;
+    }
+    &:hover {
+      color: $pinkColor;
+    }
+  }
+}

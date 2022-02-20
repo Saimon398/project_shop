@@ -1,0 +1,102 @@
+@import "variables";
+
+.b-registrationForm {
+  padding: 40px 9px 100px;
+  width: 375px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 768px;
+    gap: 28px;
+  }
+  @media (min-width: 1600px) {
+    width: 1140px;
+    padding-top: 67px;
+  }
+}
+.b-userData {
+  &__profileHeading {
+    font-size: 16px;
+    color: $darkestColor;
+    text-transform: capitalize;
+  }
+
+  &__personalProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__name,
+  &__loginInput {
+    padding: 13px 17px;
+    width: 360px;
+    box-sizing: border-box;
+    border: 1px solid #a4a4a4;
+    outline: none;
+  }
+
+  &__gender {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(n + 2) {
+      margin-left: 20px;
+    }
+  }
+
+  &__checkText {
+    font-size: 11px;
+    margin-left: 10px;
+  }
+
+  &__radio {
+    height: 17px;
+    width: 17px;
+    border: 1px solid #a4a4a4;
+  }
+
+  &__login {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__loginHeading {
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+
+  &__passwordWarning {
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 29px;
+    width: 167px;
+    margin-top: 18px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: $pinkColor;
+    color: white;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+    &:hover {
+      background-color: transparentize($pinkColor, 0.4);
+    }
+  }
+}

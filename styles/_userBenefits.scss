@@ -1,0 +1,49 @@
+@import "variables";
+
+.b-userBenefits {
+  margin-top: 40px;
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media (min-width: 1600px) {
+    width: 847px;
+  }
+
+  &__heading {
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+
+    @media (min-width: 1600px) {
+      font-size: 24px;
+    }
+  }
+
+  &__description,
+  &__list {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    opacity: 0.8;
+    @media (min-width: 1600px) {
+      font-size: 24px;
+    }
+  }
+
+  &__description {
+    margin-top: 32px;
+    margin-bottom: 28px;
+    width: 96%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 29px;
+  }
+}

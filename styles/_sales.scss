@@ -1,0 +1,81 @@
+@import "variables";
+@import "promo";
+
+.b-sales {
+  padding: 64px 16px;
+  display: grid;
+  justify-content: center;
+  grid-template: repeat(3, 247px) 111px / 343px;
+  row-gap: 32px;
+
+  @media (min-width: 768px) {
+    padding: 20px 16px 155px;
+    grid-template: 167px 116px / repeat(3, 232px);
+    grid-template-areas:
+      "it1 it2 it3"
+      "it4 it4 it4";
+    gap: 19px;
+  }
+  @media (min-width: 1600px) {
+    padding-top: 65px;
+    padding-bottom: 96px;
+    grid-template: 260px 180px / repeat(3, 360px);
+    grid-template-areas:
+      "it1 it2 it3"
+      "it4 it4 it4";
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      background-image: url(../images/sales_woman.jpg);
+      @media (min-width: 768px) {
+        grid-area: it1;
+      }
+    }
+    &:nth-child(2) {
+      background-image: url(../images/sales_man.jpg);
+      @media (min-width: 768px) {
+        grid-area: it2;
+      }
+    }
+    &:nth-child(3) {
+      background-image: url(../images/sales_arrivals.jpg);
+      @media (min-width: 768px) {
+        grid-area: it3;
+      }
+    }
+    &:last-child {
+      background: url(../images/sales_accesoris.jpg);
+      @media (min-width: 768px) {
+        grid-area: it4;
+        background: url(../images/sales_accesories.jpg);
+      }
+      @media (min-width: 1600px) {
+        background: url(../images/sales_accesories.jpg) no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__top {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+  }
+  &__bottom {
+    font-size: 24px;
+    color: $pinkColor;
+    text-transform: uppercase;
+  }
+}

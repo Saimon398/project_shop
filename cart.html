@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="b-topNav">
+        <div class="container">
+            <div class="b-topNav__leftItem">
+                <a href="index.html"><img src="images/topNav__leftLogo.svg" alt="logo"></a>
+                <a href="catalog.html"><img class="b-topNav__zoom" src="images/topNav__leftZoom.svg" alt="zoom"></a>
+            </div>
+            <div class="b-topNav__rightItem">
+                <a href="product.html"><img class="b-topNav__menu" src="images/topNav__rightMenu.svg" alt="menu"></a>
+                <a href="registration.html"><img class="b-topNav__user" src="images/topNav__rightUser.svg" alt="userIcon"></a>
+                <div class="b-topNav__cartIcon">
+                    <a href="cart.html"><img class="b-topNav__cartImage" src="images/topNav__cartIcon.png" alt="cart"></a>
+                    <span class="b-topNav__cartNumber">5</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="b-cartHeader">
+        <h1 class="b-cartHeader__heading">Shopping cart</h1>
+    </header>
+    <main class="b-content">
+        <div class="b-topInfo b-content__topInfo">
+            <section class="b-contentCard">
+                <img class="b-contentCard__image" src="images/card_youngBoy.jpg" alt="image">
+                <div class="b-contentCard__desc">
+                    <div class="b-contentCard__descTop">
+                        <h2 class="b-contentCard__heading">Mango People T-shirt</h2>
+                        <i class="b-contentCard__cross fa-solid fa-x"></i>
+                    </div>
+                    <div class="b-contentCard__descBottom">
+                        <p class="b-contentCard__text">Price: <span class="b-contentCard__text_red">$300</span></p>
+                        <p class="b-contentCard__text">Color: Red</p>
+                        <p class="b-contentCard__text">Size: Xl </p>
+                        <p class="b-contentCard__text">Quantity: <span class="b-contentCard__text_withBorder">2</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="b-contentCard">
+                <img class="b-contentCard__image" src="images/catalog/red_black_men.jpg" alt="image">
+                <div class="b-contentCard__desc">
+                    <div class="b-contentCard__descTop">
+                        <h2 class="b-contentCard__heading">Mango People T-shirt</h2>
+                        <i class="b-contentCard__cross fa-solid fa-x"></i>
+                    </div>
+                    <div class="b-contentCard__descBottom">
+                        <p class="b-contentCard__text">Price: <span class="b-contentCard__text_red">$300</span></p>
+                        <p class="b-contentCard__text">Color: Red</p>
+                        <p class="b-contentCard__text">Size: Xl </p>
+                        <p class="b-contentCard__text">Quantity: <span class="b-contentCard__text_withBorder">2</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="b-contentCard__btnWrapper">
+                <button class="b-contentCard__btn">Clear shopping cart</button>
+                <button class="b-contentCard__btn">Continue shopping</button>
+            </div>
+        </div>
+        <div class="b-bottomInfo b-content__bottomInfo">
+            <form class="b-bottomInfo__form" action="#">
+                <h4 class="b-bottomInfo__heading">Shipping adress</h4>
+                <input class="b-bottomInfo__userInput" type="text" name="country" placeholder="Country">
+                <input class="b-bottomInfo__userInput" type="text" name="state" placeholder="State">
+                <input class="b-bottomInfo__userInput" type="text" name="postcode" placeholder="Postcode / Zip">
+                <button class="b-bottomInfo__btn" type="submit">Get a quote</button>
+            </form>
+            <div class="b-finalOrder b-bottomInfo__finalOrder">
+                <div class="b-finalOrder__textWrapper">
+                    <p class="b-finalOrder__text">SUB TOTAL <span
+                            class="b-finalOrder__text_different b-finalOrder__text_different_black">$900</span>
+                    </p>
+                    <p class="b-finalOrder__text">GRAND TOTAL <span
+                            class="b-finalOrder__text_different b-finalOrder__text_different_red">$900</span>
+                    </p>
+                </div>
+                <hr class="b-finalOrder__divider">
+                <button class="b-finalOrder__btn">Proceed to checkout</button>
+            </div>
+        </div>
+    </main>
+    <footer class="b-footer">
+        <div class="b-footer__top">
+            <div class="b-footer__comment">
+                <img class="b-footer__comImage" src="images/sub_image.png" alt="woman">
+                <p class="b-footer__comText">&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi,
+                    a&nbsp;pulvinar purus condimentum&raquo;</p>
+            </div>
+            <form class="b-footer__subscriptionForm" action="#">
+                <div class="b-footer__text">
+                    <div class="b-footer__formTop">Subscribe</div>
+                    <div class="b-footer__formBottom">for our newletter and promotion</div>
+                </div>
+                <div class="b-footer__userEmail">
+                    <input class="b-footer__userInput" type="email" placeholder="Enter Your Email">
+                    <button class="b-footer__button" type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div>
+        <div class="b-footer__bottom">
+            <nav class="b-footer__nav">
+                <i class="b-footer__socials fa-brands fa-facebook-f"></i>
+                <i class="b-footer__socials fa-brands fa-instagram"></i>
+                <i class="b-footer__socials fa-brands fa-pinterest-p"></i>
+                <i class="b-footer__socials fa-brands fa-twitter"></i>
+            </nav>
+            <div class="b-footer__copyright">
+                &copy; 2021 Brand All Rights Reserved
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

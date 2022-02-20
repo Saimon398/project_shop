@@ -1,0 +1,113 @@
+@import "variables";
+
+.b-product {
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__headingTop {
+    font-size: 30px;
+    font-weight: 400;
+    color: $darkestColor;
+    line-height: 36px;
+  }
+  &__headingBottom {
+    font-size: 14px;
+    color: #9f9f9f;
+    line-height: 17px;
+  }
+  &__catalog {
+    padding: 9px 8px 41px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 8.6px;
+    @media (min-width: 768px) {
+      padding: 23px 16px 20px;
+      display: grid;
+      grid-template: repeat(3, 579px) / repeat(2, 360px);
+      row-gap: 23px;
+    }
+    @media (min-width: 1600px) {
+      grid-template: repeat(2, 581px) / repeat(3, 360px);
+      gap: 30px;
+      padding-top: 20px;
+      padding-bottom: 47px;
+    }
+  }
+  &__card {
+    background: #f8f8f8;
+    @media (min-width: 768px) {
+      &:nth-child(n + 3) {
+        margin-top: -15px;
+      }
+    }
+    @media (min-width: 1600px) {
+      &:nth-child(n + 3) {
+        margin-top: -2px;
+      }
+    }
+  }
+  &__card:last-child {
+    display: none;
+
+    @media (min-width: 1600px) {
+      display: block;
+    }
+  }
+
+  &__text {
+    padding: 17.95px 23.28px 28.72px 19.95px;
+  }
+  &__title {
+    font-size: 13px;
+    color: #000;
+    line-height: 16px;
+  }
+  &__description {
+    width: 313px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5d5d5d;
+    padding: 12.62px 0 17.95px;
+  }
+  &__price {
+    font-size: 16px;
+    font-weight: 400;
+    color: $pinkColor;
+  }
+  &__imageWrapper {
+    height: 418px;
+    width: 358px;
+    background: rgba(58, 56, 56, 0.86);
+    position: relative;
+  }
+  &__image {
+    transition-duration: 0.5s;
+  }
+  &__image:hover {
+    filter: opacity(20%);
+  }
+  &__imageWrapper:hover .b-product__cartIcon {
+    display: flex;
+    width: 140px;
+  }
+
+  &__cartIcon {
+    width: 140px;
+    font-size: 14px;
+    justify-content: space-around;
+    color: #fff;
+    align-items: center;
+    padding: 10px 13px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 186px;
+    left: 111px;
+    display: none;
+  }
+}

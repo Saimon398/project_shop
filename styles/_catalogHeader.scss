@@ -1,0 +1,51 @@
+@import "variables";
+.b-header {
+    background: #F8F3F4;
+}
+.b-catalogHeader {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+
+    &__heading {
+        font-size: 24px;
+        font-weight: 400;
+        color: $pinkColor;
+        text-transform: uppercase;
+    }
+
+    &__itemsWrapper {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__headerNav {
+        margin-bottom: 14px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__navItem {
+        list-style-type: none;
+        font-size: 14px;
+        color:#636363;
+        text-transform: uppercase;
+        transition-duration: 0.5s;
+
+        &:hover {
+            color: $pinkColor;
+        }
+    }
+}

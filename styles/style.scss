@@ -1,0 +1,40 @@
+// Стили для index.html
+
+@import "topNav";
+@import "promo";
+@import "sales";
+@import "productCards";
+@import "button";
+@import "benefits";
+@import "footer";
+@import "mainNav";
+@import "product";
+@import "control";
+@import "productImage";
+@import "productInfo";
+@import "productCatalog";
+
+// Стили для catalog.html
+@import "catalogHeader";
+
+// Стили для cart.html
+@import "cartHeader";
+@import "content";
+
+// Стили для registration.scss
+@import "registration";
+@import "registrationForm";
+@import "userBenefits";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+}
+input {
+  transition-duration: 0.5s;
+  &:focus {
+    background: #f1e4e6;
+    border: 2px solid $pinkColor;
+  }
+}
